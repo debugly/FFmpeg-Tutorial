@@ -1,0 +1,14 @@
+prefix=/Users/qianlongxu/Documents/GitWorkSpace/FFmpeg-iOS-build-script/ffproduct/FFmpeg-3.1.11/x86_64
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libswscale
+Description: FFmpeg image rescaling library
+Version: 4.1.100
+Requires: libavutil >= 55.28.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lswscale -lm
+Libs.private: 
+Cflags: -I${includedir}
